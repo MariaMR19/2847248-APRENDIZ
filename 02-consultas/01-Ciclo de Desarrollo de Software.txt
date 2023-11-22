@@ -26,3 +26,4 @@ El equipo corrige errores, resuelve problemas de los clientes y administra los c
 3- ¿Porqué existen varios tipos de ciclos de desarrollo de software?
 
 Para facilitar una metodología común entre el cliente y la compañía de software.  Estos modelos o tipos de software se actualizan para mostrar las etapas de desarrollo involucradas y la documentación necesaria, de forma que cada fase se valide antes de continuar con la siguiente.
+
