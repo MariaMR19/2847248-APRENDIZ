@@ -1,4 +1,28 @@
 1- ¿Qué es un ciclo de desarrollo Software?
+El ciclo de vida del desarrollo de software (SDLC) es un proceso rentable y eficiente en términos de tiempo empleado por los equipos de desarrollo para diseñar y crear software de alta calidad. El objetivo es minimizar los riesgos del proyecto por medio de una planificación anticipada que permita que el software cumpla las expectativas del cliente durante la fase de producción y posteriormente. Esta metodología establece una serie de pasos que dividen el proceso de desarrollo de software en tareas que se pueden asignar, completar y medir.
+
 2- ¿Cuáles son las fases principales de un ciclo de desarrollo?
+Planificación
+
+Establece las especificaciones y define los objetivos comunes que ayudan a planificar el proyecto. El equipo estima los costos, define una programación y dispone de un plan detallado para conseguir los objetivos.
+
+Diseño
+Se analizan los requisitos e identifican las mejores soluciones para crear el software. 
+
+Implementación
+El equipo de desarrollo codifica el producto. Se analizan los requisitos para identificar tareas de codificación más pequeñas que puedan hacerse diariamente para conseguir el resultado final.
+
+Pruebas
+Combina las pruebas automáticas y manuales para comprobar si el software tiene errores. La fase de pruebas se ejecuta con frecuencia en paralelo a la fase de desarrollo.
+
+Despliegue
+Cuando los equipos desarrollan software, lo codifican y prueban en una copia diferente que no es a la que acceden los usuarios. 
+
+Disponer de un entorno de compilación y de un entorno de producción diferenciados garantiza que los clientes puedan seguir usando el software incluso cuando se modifica o actualiza. La fase de despliegue incluye varias tareas para llevar la última copia compilada al entorno de producción, como empaquetado, configuración del entorno e instalación.
+
+Mantenimiento
+El equipo corrige errores, resuelve problemas de los clientes y administra los cambios hechos en el software. Además, el equipo supervisa el rendimiento general del sistema, la seguridad y la experiencia del usuario para identificar nuevas maneras de mejorar el software existente.
+
 3- ¿Porqué existen varios tipos de ciclos de desarrollo de software?
 
+Para facilitar una metodología común entre el cliente y la compañía de software.  Estos modelos o tipos de software se actualizan para mostrar las etapas de desarrollo involucradas y la documentación necesaria, de forma que cada fase se valide antes de continuar con la siguiente.
