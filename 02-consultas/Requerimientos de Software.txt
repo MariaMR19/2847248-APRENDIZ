@@ -1,0 +1,22 @@
+1- ¿Qué son requerimientos de Software?
+Es una descripción de lo que un programa de software en particular debe hacer.  Expresa lo que el cliente quiere.
+
+2- ¿Qué son requerimientos funcionales?
+Es una descripción de lo que será el sistema y cómo funcionará para satisfacer las necesidades del usuario.
+
+3- ¿Qué son requerimientos no funcionales?
+Son las restricciones o los requisitos impuestos al sistema.  No determinan una funcionalidad del sistema a desarrollar.
+
+4- Dar 5 ejemplos de requerimientos Funcionales.
+	a. Un usuario podrá iniciar sesión en el sistema utilizando su nombre de 	usuario y contraseña
+	b. El sistema calculará el impuesto a las ventas por la compra del usuario
+	c. El sistema enviará un correo electrónico de confirmación al usuario después 	de que haya realizado un pedido con éxito.
+	d. Al ingresar órdenes de entrega, toda orden de entrega estará asociada a un 	pedido de venta
+	e. Los pedidos de compra que excedan los montos establecidos en el flujo de 	liberaciones de pedidos configurados, deberán pasar por las aprobaciones 	establecidas en dicho flujo de aprobación.
+
+5- Dar 5 ejemplos de requerimientos No Funcionales.
+	a. Eficiencia: El sistema debe ser capaz de operar adecuadamente con hasta 	100.000 usuarios con sesiones concurrentes
+	b. Seguridad lógica y de datos: Los permisos de acceso al sistema podrán ser 	cambiados solamente por el administrador de acceso al datos.
+	c. Seguridad Industrial: El sistema no continuará operando si la temperatura 	externa es menor a 4 grados Celsius.
+	d. Usabilidad: El tiempo de aprendizaje del sistema por un usuario deberá ser 	menor a 4 horas.
+	e. Dependibilidad: El tiempo para iniciar o reiniciar el sistema no podrá ser 	mayor a 5 minutos.
