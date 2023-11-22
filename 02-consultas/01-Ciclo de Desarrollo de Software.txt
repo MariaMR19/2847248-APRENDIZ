@@ -1,0 +1,4 @@
+1- ¿Qué es un ciclo de desarrollo Software?
+2- ¿Cuáles son las fases principales de un ciclo de desarrollo?
+3- ¿Porqué existen varios tipos de ciclos de desarrollo de software?
+
