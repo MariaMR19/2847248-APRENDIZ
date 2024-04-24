@@ -40,9 +40,7 @@ public class Ejer02 {
                
         float pp=((nota_m*cre_m)+(nota_e*cre_e)+(nota_i*cre_i)+(nota_cn*cre_cn)+(nota_d*cre_d))/(cre_m+cre_e+cre_i+cre_cn+cre_d);
 
-        System.out.print("================================");
-        System.out.print("=       CALCULADO              =");
-        System.out.print("================================");       
+               
         
         System.out.println("PROMEDIO PONDERADO: "+ pp);
 
@@ -66,6 +64,8 @@ public class Ejer02 {
             }else if (nota_d<nota_e & nota_d<nota_i & nota_d<nota_cn & nota_d<nota_m){
                 nota_d=(3*(cre_m+cre_e+cre_i+cre_cn+cre_d)-(nota_e*cre_e)-(nota_i*cre_i)-(nota_cn*cre_cn)-(nota_m*cre_m))/(cre_d); 
                 System.out.print("PARA OBTENER PROMEDIO DE 3,0 - NECESITABA DEPORTES EN: " +nota_d);   
+            }else {
+                System.out.print("EL PROMEDIO FUE MENOR QUE 3,0 PERO ALGUNAS MATERIAS TUVIERON LA MISMA NOTA");
             }
        }
     }
