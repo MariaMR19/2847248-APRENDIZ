@@ -4,16 +4,25 @@ import java.util.Scanner;
             Scanner teclado=new Scanner(System.in);
 
             System.out.print("Ingrese un número ");
-            int n = teclado.nextInt();             
-            
+            int n = teclado.nextInt();   
+
             int n1=0;
             int n2=1;
-            for (int i=0; i<n; i++){
-                System.out.print(n1+" ");
-                int aux=n1;
-                n1=n2;
-                n2=aux+n2;        
-
+            System.out.print("La sucesión fibonaci es: ");
+            
+            for (int i=1; i<=n; i++){
+                if (i==1){
+                    System.out.print(n1);
+                }else if(i==2){
+                    System.out.print(","+n2);
+                }else {
+                    int nActual = n1+n2;
+                    System.out.print("," +nActual);
+                    
+                    n1=n2;
+                    n2=nActual;  
+                }
+                
             }     
                        
 
