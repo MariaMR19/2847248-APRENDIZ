@@ -11,43 +11,27 @@ import java.util.Scanner;
             System.out.print("-->Ingresar un número: ");
             int num = teclado.nextInt();
 
-            //--> Ingresar un numero: 654321 
-            //-> El digito 01 es: 6  
-            //-> El digito 02 es: 5  
-            //-> El digito 03 es: 4  
-            //-> El digito 04 es: 3  
-            //-> El digito 05 es: 2  
-            //-> El digito 06 es: 1 
+           //Algoritmo para invertir el número
 
-            int digito1=(num/100000)%10 ;  
-            int digito2=(num/10000)%10 ;
-            int digito3=(num/1000)%10 ;
-            int digito4=(num/100)%10 ;
-            int digito5=(num/10)%10 ;
-            int digito6=num%10 ;
-            
-            if (num<10) {
-                int digito6=num%10;
-            } else if(num>=10 & num<100){
-                int digito5=(num/10)%10;
-            }else if(num>=100 & num<1000){
-                int digito4=(num/100)%10 ;
-            }else if(num>=1000 & num<10000){
-                int digito3=(num/1000)%10 ;
-            }else if(num>=10000 & num<100000){
-                int digito2=(num/10000)%10 ;
-            }else if(num>=100000 & num<1000000){
-                int digito1=(num/100000)%10 ; 
-            }else{
-                System.out.print("-->El número ingresado es cero o supera las 6 cifras ");
+           int invertido=0;
+           while (num>0) {
+                int digito=num%10;
+                int resto=num/10;
+                 num=resto;
+
+                invertido=(invertido*10)+digito;
+           }         
+
+           //Algoritmo para extraer dígitos
+           int i=1;
+           while (invertido>0) {
+            int digito=invertido%10;
+            int resto=invertido/10;
+            invertido=resto;
+
+            System.out.println("El dígito "+i+" es: "+digito);
+            i++;
             }
-
-            // Mostrar cada dígito en una línea separada
-            for( int i=1; i<7; i++){
-                System.out.println("-->El número dígito ",+i, " es:",+digito6 );
-            }                 
-        
-
         }
     }
 
