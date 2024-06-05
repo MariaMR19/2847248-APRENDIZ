@@ -2,40 +2,41 @@
 //entero denominado N, la aplicación debe calcular los NxN primeros números 
 //primos e imprimirlos en pantalla en una cuadricula de N filas con N columnas. 
 
+import java.util.Scanner;
 
-    import java.util.Scanner;
+public class Ejer10{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ingrese un número entero positivo: ");
+        int n = scanner.nextInt();
 
-    public class Ejer10{
-        public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.print("Ingrese un número entero para N: ");
-            int n = scanner.nextInt();
-    
-            int contador = 0;
-            int numero = 2;
-    
-            System.out.println("Los " + n*n + " primeros números primos son:");
-            while (contador < n*n) {
-                if (esPrimo(numero)) {
-                    System.out.print(numero + " ");
-                    contador++;
-                }
-                numero++;
-            }
-    
-            scanner.close();
+        if(n>11){
+            System.out.println("El número excede lo permitido.");
+            return;
         }
-    
-        // Método para verificar si un número es primo
-        public static boolean esPrimo(int numero) {
-            if (numero <= 1) {
-                return false;
+
+      int num=2;
+      int contador=0;
+
+      while (contador<n*n) {
+        int divisores=0;
+        for(int i=2; i<=Math.sqrt(num);i++){
+            if (num%i==0){
+                divisores++;
+                break;
             }
-            for (int i = 2; i <= Math.sqrt(numero); i++) {
-                if (numero % i == 0) {
-                    return false;
-                }
-            }
-            return true;
         }
+        if(divisores==0){
+            System.out.printf("[%03d]", num);
+            contador++;
+            if(contador%n==0){
+                System.out.println();
+            }
+        }
+        num++;
+        
+      }
+       
     }
+}
+        
