@@ -1,45 +1,42 @@
 import java.util.Scanner;
-import java.util.Random;
-
 public class Ejer01{
     public static void main(String[] args) {
+       //1. Crear la variable de entrada
         Scanner teclado = new Scanner(System.in);
 
-        
+      //2. Solicitar el número al usuario
         System.out.println("Ingresar tamaño del arreglo:");
         int n = teclado.nextInt();
 
-        
+         //3. Crear el arreglo
         int[] arreglo = new int[n];
 
-        
-        Random random = new Random();
-        for (int i = 0; i < arreglo.length; i++) {
-            arreglo[i] = random.nextInt(50); 
-        }
+         //4. Llenar el arreglo con números aleatorios impares
 
-        
-        System.out.println("Arreglo original:");
-        for (int valor : arreglo) {
-            System.out.print(valor + " ");
+        int contador=0;
+        while (contador<arreglo.length){
+             //4.1 Generar un número impar
+             int aleatorio = ((int) (Math.random()*99))+1;
+             if (aleatorio%2==1){
+                //4.2 Validar que el número impar no se repita
+                boolean valido = true;
+                for(int i=0; i<arreglo.length; i++){
+                    if(aleatorio==arreglo[i]){
+                        valido=false;
+                    }
+                }
+                //4.3 Introducir el número en el arreglo
+                if(valido==true){
+                    arreglo[contador]=aleatorio;
+                    contador++;
+                }
+             }            
         }
-              
-       
-        int[] Impares = new int[n];
-        
-        int contImpares = 0;
-
-        
-        for (int valor : arreglo) {
-            if (valor % 2 != 0) {
-                Impares[contImpares++] = valor;
-            } 
-        }
-            
+        //5. Imprimir el arreglo
         System.out.println("Arreglo de números impares:");
-        for (int valor : Impares) {
-            System.out.print(valor + " ");
-        }
+        for (int i=0; i<arreglo.length; i++ ) {
+            System.out.print(arreglo[i] + " ");
+        }      
         
     }
 }
